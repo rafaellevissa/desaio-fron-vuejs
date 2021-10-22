@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #46733E;
+}
+
+.app {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    border: solid 2px #001C00;
+}
+
+.left {
+    background: #003300;
+    flex: 1;
+    color: #EDF1BE;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left h2 {
+    height: 30px;
+    text-align: center;
+}
+
+.contacts-container {
+    height: 330px;
+    overflow: auto;
+}
+
+.contact {
+    border-top: solid 2px #001C00;
+    background: #003300;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.contact .name {
+    margin-left: 10px;
+    min-width: 50px;
+}
+
+.right {
+    background: #EDF1BE;
+    flex: 1;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    color: #001C00;
+    position: relative;
+}
+
+.contact-info header .image {
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: -10px 0px;
+    background-size: cover;
+    background-image: url('https://lh3.googleusercontent.com/proxy/Q06BSXaPgj-TA3w7zZpl4cvgqrZZNQjafuvpsS_7PGfNE8O1eXDqLnvCaq69CSM6n2jX5JkYvj2Gd7YLpQevevI722owORA6LI0su-EAnAiq7JGVxB6D');
+}
+
+.contact-info header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info header h3 {
+    margin: 75px 0 0 0;
+    text-align: center;
+}
+
+.contact-info section {
+    flex: 1;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info section p > span:nth-child(1) {
+    text-decoration: underline;
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+    padding-left: 7px;
+    background: #ebeed0;
+}
+
+button {
+    background: #46733E;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.create-contact {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    position: absolute;
+    bottom: -185px;
+    right: 10px;
+}
+
+.fa-plus {
+    font-size: 20px;
+}

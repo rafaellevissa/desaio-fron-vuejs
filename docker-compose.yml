@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+  client:
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
